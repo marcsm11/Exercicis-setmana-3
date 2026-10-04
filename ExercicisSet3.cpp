@@ -356,7 +356,7 @@ public:
 
 int main()
 {
-    Producte p1("Ratolí", 15.99, 2);
+    Producte p1("Patates", 15.99, 2);
 
     cout << "Preu inicial: " << p1.consultarPreu() << " €" << endl;
     p1.canviarPreu(12.50);
@@ -428,7 +428,7 @@ public:
         return nombreNits * preuPerNit;
     }
 
-    void cancellarReserva()
+    void cancelarReserva()
     {
         activa = false;
     }
@@ -441,7 +441,7 @@ public:
 
 int main()
 {
-    Reserva r1("Joan Garcia", 3, 80.0);
+    Reserva r1("Marc Soler", 3, 80.0);
 
     cout << "Client: " << r1.consultarNomClient() << endl;
     cout << "Preu total (3 nits): " << r1.calcularPreuTotal() << " €" << endl;
@@ -449,10 +449,10 @@ int main()
     r1.canviarNombreNits(5);
     cout << "Preu total actualitzat (5 nits): " << r1.calcularPreuTotal() << " €" << endl;
 
-    r1.cancellarReserva();
+    r1.cancelarReserva();
     cout << "Reserva activa? " << (r1.estaActiva() ? "Sí" : "No") << endl;
 
-    // Intentar modificar noches tras cancelar
+	// Intentar modificar noches después de cancelar la reserva
     r1.canviarNombreNits(7);
 
     return 0;
