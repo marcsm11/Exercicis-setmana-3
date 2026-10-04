@@ -1,1 +1,0 @@
-# Exercicis setmana 3
